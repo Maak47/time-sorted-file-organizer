@@ -25,9 +25,6 @@ pip install -r requirements.txt
 ```
 Note: No dependencies are required currently.
 
-Thank you for clarifying.
-So, the suffix parameter is used to filter files by their extension, not to rename the extension itself.
-To make this clearer in the README, I'll update the documentation:
 Usage
 ---------
 Run the script with Python
