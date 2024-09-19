@@ -25,22 +25,27 @@ pip install -r requirements.txt
 ```
 Note: No dependencies are required currently.
 
+Thank you for clarifying.
+So, the suffix parameter is used to filter files by their extension, not to rename the extension itself.
+To make this clearer in the README, I'll update the documentation:
 Usage
 ---------
-Running the Script
+Run the script with Python
 ```Bash
-python time_sorted_file_organiser.py /path/to/directory prefix suffix
+  python time_sorted_file_organiser.py /path/to/directory prefix extension
 ```
 Replace:
 /path/to/directory with the desired directory path
 prefix with the desired file prefix
-suffix with the desired file extension (e.g., js, txt, etc.)
-
+extension with the file extension to filter by (e.g., js, txt, etc.)
+Note: The script will only rename files with the specified extension, leaving other files unchanged.
 Example
------------
+----------- 
+Rename JavaScript files in the /home/maak/spam directory with the prefix spam
 ```Bash
-python time_sorted_file_organiser.py /home/maak/spam spam js
+  python time_sorted_file_organiser.py /home/maak/spam spam js
 ```
+
 Contributing
 ---------------
 Contributions are welcome!
