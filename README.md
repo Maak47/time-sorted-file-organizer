@@ -1,4 +1,4 @@
-Time Sorted File Organiser
+Time Sorted File Organizer
 =====================================
 About
 --------
@@ -13,11 +13,11 @@ Installation
 ---------------
 Step 1: Clone the Repository
 ```Bash
-git clone https://github.com/maak47/time-sorted-file-organiser.git
+git clone https://github.com/maak47/time-sorted-file-organizer.git
 ```
 Step 2: Navigate to the Repository Directory
 ```Bash
-cd time-sorted-file-organiser
+cd time-sorted-file-organizer
 ```
 Step 3: Install Required Dependencies
 ```Bash
@@ -29,18 +29,23 @@ Usage
 ---------
 Run the script with Python
 ```Bash
-  python time_sorted_file_organiser.py /path/to/directory prefix extension
+  python time_sorted_file_organizer.py /path/to/directory prefix extension [reverse]
 ```
 Replace:
 /path/to/directory with the desired directory path
 prefix with the desired file prefix
 extension with the file extension to filter by (e.g., js, txt, etc.)
+[reverse] with reverse or r to sort in descending order (optional)
 Note: The script will only rename files with the specified extension, leaving other files unchanged.
 Example
 ----------- 
 Rename JavaScript files in the /home/maak/spam directory with the prefix spam
 ```Bash
-  python time_sorted_file_organiser.py /home/maak/spam spam js
+  python time_sorted_file_organizer.py /home/maak/spam spam js
+```
+Rename JavaScript files in the /home/maak/spam directory with the prefix spam in descending order:
+```Bash
+  python time_sorted_file_organizer.py /home/maak/spam spam js reverse
 ```
 
 Contributing
@@ -53,4 +58,4 @@ Create a pull request
 Author
 Maak47
 --------
-Thank you for using Time Sorted File Organiser!
+Thank you for using Time Sorted File Organizer!
